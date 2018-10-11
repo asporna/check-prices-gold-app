@@ -19,3 +19,334 @@ body {
     font-family: Helvetica, sans-serif
 }
 
+h2 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: rgb(163, 173, 169);
+}
+
+#container {
+     width: 80%;
+     margin: 0 auto;
+     padding-bottom: 50px;
+     overflow: hidden;
+}
+
+
+/******************************
+    HEADER
+******************************/
+
+#main-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+#main-header h1 {
+    font-family: "AdamPro", Arial, Helvetica, sans-serif;
+    color: #c3a96b;
+    font-size: 5.8rem;
+    display: inline-block;
+    position: relative;
+}
+
+#main-header h1::before, #main-header h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 2px; 
+    transform: translateX(-50%);
+    background-color: #c3a96b;
+    border-radius: 100%;
+}
+
+#main-header h1::before {
+    width: 80%;
+    top: -23px;
+}
+
+#main-header h1::after {
+    width: 90%;
+    bottom: -13px;
+}
+
+
+
+.check-price-container, .result-container {
+    width: calc(50% - 100px);
+    margin: 50px;
+    float: left;
+}
+
+/******************************
+    CHECKING PRICE
+******************************/
+
+
+
+.result-container h2 {
+    text-align: center;
+}
+
+.date-range .row {
+    margin: 15px 0;
+}
+
+.check-price-form  {
+    position: relative;
+   
+}
+
+.check-price-form label {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    width: 70px;
+    text-align: right;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.check-price-form input {
+    width: 170px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #c3a96b;
+    background-color: #292828;
+    color: #efefef;
+}
+
+#get-price {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: #6EDEF6;
+    border: none;
+    border: 2px solid #6EDEF6;
+    transition: all 0.3s;
+    outline: 0;
+}
+
+#get-price:hover {
+    border-color: #29D58E;
+    color: #29D58E;
+    border-radius: 20px;
+}
+
+
+/******************************
+    ERROS
+******************************/
+.errors {
+    width: 100%;
+    background-color: #572d32;
+   border: 2px solid rgb(243, 106, 91);
+    padding: 5px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.errors .text-error {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #efefef;
+}
+
+
+/******************************
+    TABLE
+******************************/
+
+#gold-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #c3a96b;  
+}
+
+#gold-rates-table thead{
+    color: #292828;
+    border-bottom: 2px solid #433A25;
+}
+
+#gold-rates-table thead th, #gold-rates-table tbody td {
+    padding: 15px 30px;
+    width: 50%;
+}
+
+#gold-rates-table thead th {
+    background-color: #c3a96b;
+    cursor: pointer;
+    position: relative;
+}
+
+#gold-rates-table thead th:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    border-left: 2px solid #a38a4f;
+    height: 75%;
+}
+
+#gold-rates-table tbody tr {
+    text-align: center;
+}
+
+#gold-rates-table tbody tr:not(:last-child){
+    border-bottom: 1px solid #353434;
+}
+
+#gold-rates-table tbody tr td:not(:last-child){
+    border-right: 1px dashed #353434;
+}
+
+#gold-rates-table tbody tr td:nth-child(2) {
+    color: #29D58E;
+}
+
+.ascending, .descending {
+    position: relative;
+    color: #353434
+}
+
+.ascending::after, .descending::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    border-style: solid;
+}
+
+.ascending::after {
+    border-width: 0px 8px 8px 8px;
+    border-color: transparent transparent  #353434  transparent;
+}
+
+.descending::after  {
+    border-width: 8px 8px 0px 8px;
+    border-color: #353434 transparent transparent transparent;
+}
+
+
+/******************************
+    RESULT MIN, MAX, MEDIAN
+*******************************/
+
+.specific-values-gold {
+    margin-top: 20px;
+}
+
+.result-box {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.result-box h3 {
+    font-size: 1.8rem;
+    color: #c3a96b;
+}
+
+.result-box output {
+    font-size: 1.6rem;
+    color: #29D58E;
+}
+
+/******************************
+         MEDIA QUERIES 
+*******************************/
+
+@media all and (max-width: 1439px) {
+
+    #get-price {
+        width: 250px;
+       position: static;
+       margin-top: 10px;
+    }
+
+    .errors {
+        padding: 3px 15px;
+    }
+
+    #main-header h1 {
+        font-size: 5rem;
+
+    }
+
+}
+
+
+@media all and (max-width: 1039px) {
+
+    #main-header h1 {
+        font-size: 4.2rem;
+
+    }
+
+    .check-price-container, .result-container {
+        width: 100%;
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .check-price-form {
+        margin-bottom: 50px;
+      
+    
+    }
+
+    .check-price-form label {
+        display: block;
+        text-align: center;
+        margin: 18px auto 3px auto;
+    }
+
+    .result-container {
+        margin-top: 50px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    #main-header {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+   
+
+    #main-header h1 {
+        font-size: 3.4rem;
+    }
+
+    #container {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 374px) {
+    @media all and (max-width: 767px) {
+        font-size: 3.2rem;
+    }
+}

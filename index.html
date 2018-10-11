@@ -15,6 +15,85 @@
 </head>
 
 <body>
+        <div id="container">
+                <header id="main-header">
+                    <h1>Check the price of gold</h1>
+                </header>
+        
+                <section id="prices-gold">
+                    <div class="check-price-container">
+        
+                        <h2>Check price</h2>
+                        <form method="GET" action="#" class="check-price-form">
+        
+                            <div class="date-range">
+                                <div class="row">
+                                    <label for="date-range-from">From</label><input type="text" name="date-from" class="datepicker"
+                                        id="date-range-from">
+                                </div>
+                                <div class="row">
+                                    <label for="date-range-to">To</label><input type="text" name="date-to" class="datepicker"
+                                        id="date-range-to">
+                                </div>
+                            </div>
+        
+                        
+                            <button type="submit" id="get-price">Get price</button>
+                       
+                        </form>
+        
+        
+                    </div>
+        
+                    <div class="result-container">
+        
+                        <h2>Result price</h2>
+                        <table id="gold-rates-table">
+                            <thead>
+                                <tr>
+                                    <th class="ascending">Date</th>
+                                    <th>Price(PLN)</th>
+        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+        
+                            </tbody>
+        
+                        </table>
+        
+                        <div class="specific-values-gold">
+        
+                            <div class="result-box min-price">
+                                <h3>Minimum price </h3>
+                                <output></output>
+                            </div>
+                            <div class="result-box max-price">
+                                <h3>Maximum price </h3>
+                                <output></output>
+                            </div>
+                            <div class="result-box median-price">
+                                <h3>Median price</h3>
+                                <output></output>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+        
+            </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
