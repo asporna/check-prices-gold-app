@@ -187,7 +187,7 @@
                 dateTo = formCheckPrice.find("input[name='date-to']").val();
 
             if (validForm(dateFrom, dateTo)) {
-                let urlReq = "http://api.nbp.pl/api/cenyzlota/" + dateFrom + "/" + dateTo;
+                let urlReq = "https://api.nbp.pl/api/cenyzlota/" + dateFrom + "/" + dateTo;
                 getPricesGold(urlReq);
             }
         })
