@@ -1,0 +1,19 @@
+{
+  "name": "check-prices-gold-app",
+  "version": "1.0.0",
+  "description": "\"Application for checking gold prices for a given period\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asporna/check-prices-gold-app.git"
+  },
+  "author": "\"Artur Spórna\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asporna/check-prices-gold-app/issues"
+  },
+  "homepage": "https://github.com/asporna/check-prices-gold-app#readme"
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "AdamPro";
+    src: url("../assets/fonts/adamPro.otf");
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: url("../img/background.png");
+    color: #c4c4c4;
+    font-size: 1.6rem;
+    font-family: Helvetica, sans-serif
+}
+
